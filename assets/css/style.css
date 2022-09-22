@@ -2,6 +2,7 @@ html, body {
   margin: 0;
   padding: 0;
   position: relative;
+  background-color: #FFFFFF;
 }
 
 header {
@@ -12,6 +13,7 @@ header {
 header h1 {
   font-family: "Geometria",sans-serif;
   font-size: 40px;
+  color: #000000;
 }
 
 .slider-wrapper {
@@ -41,15 +43,15 @@ header h1 {
 }
 
 .swiper-slide .slide-background.one {
-  background-image: url("../images/interbank-app-desktop.png");
+  background-image: url("../images/interbank-app-escritorio.png");
 }
 
 .swiper-slide .slide-background.two {
-  background-image: url("../images/supertasa-desktop.jpg");
+  background-image: url("../images/supertasa-escritorio.jpg");
 }
 
 .swiper-slide .slide-background.three {
-  background-image: url("../images/campaña-millonaria-desktop_.png");
+  background-image: url("../images/campana-millonaria-escritorio.png");
 }
 
 .o-container {
@@ -68,22 +70,89 @@ header h1 {
   padding: 0px 50px;
 }
 
-.swiper-slide .o-container .text-container h1, p {
-  font-family: sans-serif;
+.swiper-slide .o-container .text-container h3, p {
+  font-family: "Geometria",sans-serif;
   color: #fff;
 }
 
-.swiper-slide .o-container .text-container h1 {
+.swiper-slide .o-container .text-container h3 {
+  font-family: "Geometria",sans-serif;
   font-size: 52px;
+  color: #FFFFFF
 }
 
 .swiper-slide .o-container .text-container p {
+  font-family: "Geometria",sans-serif;;
   font-size: 18px;
+  color: #FFFFFF
 }
 
 @media only screen and (max-width: 768px) {
   /*Reajustar tamaños para movil aquí*/
   header h1 {
+    font-family: "Geometria",sans-serif;
     font-size: 28px;
+    color: #000000
+  }
+
+  .slider-wrapper .slider {
+    position: relative;
+    height: 320px;
+  }
+
+  .swiper {
+    width: 100%;
+    height: 320px;
+  }
+
+  .swiper-slide .slide-background {
+    height: 320px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .swiper-slide .slide-background.one {
+    background-image: url("../images/interbank_app_movil.png");
+  }
+
+  .swiper-slide .slide-background.two {
+    background-image: url("../images/supertasa-movil.jpg");
+  }
+  
+  .swiper-slide .slide-background.three {
+    background-image: url("../images/campana-millonaria-movil.png");
+  }
+
+  .swiper-button-prev, .swiper-button-next {
+    --swiper-navigation-size: 22px
+  }
+
+  .swiper-pagination {
+    display: none;
+  }
+
+  .o-container {
+    max-width: none;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+  .o-container .text-container{
+    position: absolute;
+    top: 10%;
+    bottom: 0;
+    margin: auto 0;
+    width: 40%;
+    padding: 0px 50px;
+  }
+
+  .swiper-slide .o-container .text-container h3 {
+    font-size: 30px;
+  }
+
+  .swiper-slide .o-container .text-container p {
+    font-size: 16px;
   }
 }
