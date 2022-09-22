@@ -2,8 +2,10 @@
 <html lang="es" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <!--Investigar estas 2 lineas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Prueba de Swipper</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/css/libraries/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
@@ -12,59 +14,57 @@
       <h1>Prueba de Swipper</h1>
     </header>
     <main>
-      <div class="slider">
-        <!-- Slider main container -->
-        <div class="slide-container">
-          <div class="swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide">
-                <div class="slide-background" style="background-image: url(assets/images/interbank-app-desktop.png);">
-                  <div class="o-container">
-                    <div class="text-container">
-                      <h1>Interbank eres tú</h1>
-                      <p>Ponemos el poder del banco en tus manos para que alcances tus metas.</p>
+      <div class="slider-wrapper">
+        <div class="slider">
+          <!-- Slider main container -->
+          <div class="slide-container">
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <div class="slide-background one">
+                    <div class="o-container">
+                      <div class="text-container">
+                        <h1>Interbank eres tú</h1>
+                        <p>Ponemos el poder del banco en tus manos para que alcances tus metas.</p>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="slide-background" style="background-image: url(assets/images/supertasa-desktop.jpg);">
-                  <div class="o-container">
-                    <div class="text-container">
-                      <h1>Desde hoy tu dinero crece hasta 5%</h1>
-                      <p>Con tu Cuenta Súper tasa mientras más ahorras más ganas.</p>
+                <div class="swiper-slide">
+                  <div class="slide-background two">
+                    <div class="o-container">
+                      <div class="text-container">
+                        <h1>Desde hoy tu dinero crece hasta 5%</h1>
+                        <p>Con tu Cuenta Súper tasa mientras más ahorras más ganas.</p>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="slide-background" style="background-image: url(assets/images/campaña-millonaria-desktop_.png);">
-                  <div class="o-container">
-                    <div class="text-container">
-                      <h1>Regalamos un depa mensual</h1>
-                      <p>Ahorra en una Cuenta Millonaria desde S/1,500 o $750 este mes y participa.</p>
+                <div class="swiper-slide">
+                  <div class="slide-background three">
+                    <div class="o-container">
+                      <div class="text-container">
+                        <h1>Regalamos un depa mensual</h1>
+                        <p>Ahorra en una Cuenta Millonaria desde S/1,500 o $750 este mes y participa.</p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-          <!-- If we need pagination -->
-          <div class="swiper-pagination"></div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
 
-          <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-
-          <!-- If we need scrollbar -->
-          <div class="swiper-scrollbar"></div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
         </div>
       </div>
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js" charset="utf-8"></script>
     <script src="assets/js/libraries/swiper-bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
   </body>

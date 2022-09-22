@@ -2,8 +2,6 @@ html, body {
   margin: 0;
   padding: 0;
   position: relative;
-  width: 100%;
-  height: 100%;
 }
 
 header {
@@ -12,12 +10,22 @@ header {
 }
 
 header h1 {
-  font-family: sans-serif;
+  font-family: "Geometria",sans-serif;
+  font-size: 40px;
 }
 
-main .slider {
+.slider-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.slider-wrapper .slider {
   position: relative;
   height: 500px;
+}
+
+.slider .swiper-button-prev, .swiper-button-next {
+  z-index: 10;
 }
 
 .swiper {
@@ -30,7 +38,18 @@ main .slider {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  z-index: -9999;
+}
+
+.swiper-slide .slide-background.one {
+  background-image: url("../images/interbank-app-desktop.png");
+}
+
+.swiper-slide .slide-background.two {
+  background-image: url("../images/supertasa-desktop.jpg");
+}
+
+.swiper-slide .slide-background.three {
+  background-image: url("../images/campaña-millonaria-desktop_.png");
 }
 
 .o-container {
@@ -60,4 +79,11 @@ main .slider {
 
 .swiper-slide .o-container .text-container p {
   font-size: 18px;
+}
+
+@media only screen and (max-width: 768px) {
+  /*Reajustar tamaños para movil aquí*/
+  header h1 {
+    font-size: 28px;
+  }
 }
