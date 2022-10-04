@@ -90,7 +90,6 @@ header h1 {
 @media only screen and (max-width: 768px) {
   /*Reajustar tamaños para movil aquí*/
   header h1 {
-    font-family: "Geometria",sans-serif;
     font-size: 28px;
     color: #000000
   }
@@ -113,7 +112,7 @@ header h1 {
   }
 
   .swiper-slide .slide-background.one {
-    background-image: url("../images/interbank_app_movil.png");
+    background-image: url("../images/interbank-app-movil.png");
   }
 
   .swiper-slide .slide-background.two {
@@ -124,12 +123,8 @@ header h1 {
     background-image: url("../images/campana-millonaria-movil.png");
   }
 
-  .swiper-button-prev, .swiper-button-next {
-    --swiper-navigation-size: 22px
-  }
-
-  .swiper-pagination {
-    display: none;
+  .swiper-button-prev::after, .swiper-button-next::after {
+    font-size: 25px;
   }
 
   .o-container {
@@ -137,7 +132,7 @@ header h1 {
     height: 100%;
     margin-left: auto;
     margin-right: auto;
-}
+  }
 
   .o-container .text-container{
     position: absolute;
